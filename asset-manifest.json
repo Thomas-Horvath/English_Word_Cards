@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/English_Word_Cards/static/css/main.9adc8000.css",
+    "main.js": "/English_Word_Cards/static/js/main.1499a924.js",
+    "index.html": "/English_Word_Cards/index.html",
+    "main.9adc8000.css.map": "/English_Word_Cards/static/css/main.9adc8000.css.map",
+    "main.1499a924.js.map": "/English_Word_Cards/static/js/main.1499a924.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9adc8000.css",
+    "static/js/main.1499a924.js"
+  ]
+}
