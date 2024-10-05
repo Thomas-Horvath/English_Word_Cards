@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/English_Word_Cards/static/css/main.d53f26cb.css",
-    "main.js": "/English_Word_Cards/static/js/main.199f777e.js",
+    "main.css": "/English_Word_Cards/static/css/main.688bf86c.css",
+    "main.js": "/English_Word_Cards/static/js/main.5a44b3b6.js",
     "index.html": "/English_Word_Cards/index.html",
-    "main.d53f26cb.css.map": "/English_Word_Cards/static/css/main.d53f26cb.css.map",
-    "main.199f777e.js.map": "/English_Word_Cards/static/js/main.199f777e.js.map"
+    "main.688bf86c.css.map": "/English_Word_Cards/static/css/main.688bf86c.css.map",
+    "main.5a44b3b6.js.map": "/English_Word_Cards/static/js/main.5a44b3b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.d53f26cb.css",
-    "static/js/main.199f777e.js"
+    "static/css/main.688bf86c.css",
+    "static/js/main.5a44b3b6.js"
   ]
 }
