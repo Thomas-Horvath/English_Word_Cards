@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    margin: 20px 0; // Térköz a kártyák között
 }
 
 .card {
@@ -26,26 +26,29 @@
         border: 1px solid #ccc;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.4s ease;
+        transition: transform 0.3s ease; // Az animáció időtartama
     }
 
     &-front {
-        background-color: #ccc;
-        color: $bg;
+        background-color: #ccc; // Háttérszín az első oldalnak
+        color: $bg; // Szöveg színe
     }
 
     &-back {
-        background-color: $main-color;
-        transform: rotateY(180deg); // A hátsó oldal alapértelmezésben el van forgatva
+        background-color: $main-color; // Háttérszín a második oldalnak
+        color: $white-smoke; // Szöveg színe
+        transform: rotateY(-180deg); // Elfordított állapot
     }
 
     &.flipped &-front {
-        transform: rotateY(180deg); // A kártya első oldala megfordul
+        transform: rotateY(180deg); // Az első oldal elforgatása
     }
 
     &.flipped &-back {
-        transform: rotateY(0deg); // A hátsó oldal visszafordul
+        transform: rotateY(0deg); // A második oldal megjelenítése
+    }
+
+    &.no-animation {
+        transition: none; // Eltávolítjuk az animációt a következő szó megjelenítésekor
     }
 }
-
-

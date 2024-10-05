@@ -51,9 +51,11 @@ body {
   font-weight: 600;
   cursor: pointer;
   margin-top: 2rem;
-  transition: transform 0.05s ease-in-out;
+  transition: transform 0.05s ease-in-out, background 0.2s;
 }
-
+.btn:hover {
+  background: rgba(30, 144, 255, 0.4392156863);
+}
 .btn:active {
   transform: scale(0.98);
 }
@@ -131,6 +133,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 20px 0;
 }
 
 .card {
@@ -152,7 +155,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
 }
 .card-front {
   background-color: #ccc;
@@ -160,11 +163,15 @@ body {
 }
 .card-back {
   background-color: #1e90ff;
-  transform: rotateY(180deg);
+  color: #eee;
+  transform: rotateY(-180deg);
 }
 .card.flipped .card-front {
   transform: rotateY(180deg);
 }
 .card.flipped .card-back {
   transform: rotateY(0deg);
+}
+.card.no-animation {
+  transition: none;
 }
