@@ -1,0 +1,39 @@
+@mixin btnCommon($background, $color, $hoverBg, $hoverColor ) {
+    width:fit-content;
+ 
+    padding: .5rem 2rem ;
+    background: $background;
+    color: $color;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #000000bb;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: transform .05s ease-in-out, background .2s;
+
+    &:hover {
+        background: $hoverBg;
+        color: $hoverColor;
+    }
+
+    &:active {
+        transform: scale(.98)
+    }
+
+}
+
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flexCenterColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

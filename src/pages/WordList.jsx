@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Card from '../components/WordCards/Card';
 import { wordlist } from '../assets/data/wordlist.js';
 
 const WordList = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false); // Flippelt állapot
-
+  const { category } = useParams();
   // Word keys
-  const wordKeys = Object.keys(wordlist);
+  const wordKeys = Object.keys(wordlist[category]);
 
   const handleNextWord = () => {
     setIsFlipped(false);
@@ -18,10 +19,10 @@ const WordList = () => {
 
   return (
     <div className='page-container'>
-      <h1>Szókártyák</h1>
+      <h1>Szókártyák -  { category }</h1>
       <Card
         word={wordKeys[currentWordIndex]}
-        translation={wordlist[wordKeys[currentWordIndex]]}
+        translation={wordlist[category][wordKeys[currentWordIndex]]}
         onFlipped={isFlipped}
         setIsFlipped={setIsFlipped} // Átadjuk a flippelt állapotot
       />

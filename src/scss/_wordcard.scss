@@ -1,8 +1,5 @@
 .card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flexCenterColumn;
     margin: 20px 0; // Térköz a kártyák között
 }
 
@@ -15,13 +12,12 @@
 
     &-front,
     &-back {
+        @include flexCenter; 
         position: absolute;
         width: 100%;
         height: 100%;
         backface-visibility: hidden; // A másik oldal rejtve marad
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       
         font-size: 3rem;
         border: 1px solid #ccc;
         border-radius: 10px;

@@ -13,7 +13,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/wordlist" element={<WordList />} />
+            <Route path="/card/:category" element={<WordList />} />
             <Route path="/addword" element={<AddWord />} />
           </Routes>
         </div>

@@ -24,10 +24,10 @@ const Sidebar = () => {
             <Link to="/" onClick={toggleMenu}>Főoldal</Link>
           </li>
           <li>
-            <Link to="/wordlist" onClick={toggleMenu}>Szókártyák</Link>
+            <Link to="/card/kitchen" onClick={toggleMenu}>Szókártyák</Link>
           </li>
           <li>
-            <Link to="/addword" onClick={toggleMenu}>Szókártya hozzáadása</Link>
+            <Link to="/addword" onClick={toggleMenu}>Gyüjtemények</Link>
           </li>
         </ul>
       </nav>
